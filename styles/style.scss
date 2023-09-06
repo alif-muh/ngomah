@@ -1,11 +1,203 @@
+// import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+// colors
+$ngomah-primary: #3bccaf;
+$ngomah-secondary: #03312e;
+$ngomah-black: #131515;
+$ngomah-neutral: #ffffff;
+$ngomah-bg-grey: #fcfcfc;
+
+// fonts
+$ngomah-font: Montserrat;
+$ngomah-fonts-weight-1: 500;
+$ngomah-fonts-weight-2: 600;
+$ngomah-fonts-weight-3: 700;
+$ngomah-fonts-weight-4: 800;
+
+// sizes
+$ngomah-sizes-1: 0.25rem;
+$ngomah-sizes-2: 0.5rem;
+$ngomah-sizes-3: 0.75rem;
+$ngomah-sizes-4: 1rem;
+$ngomah-sizes-5: 1.25rem;
+$ngomah-sizes-6: 1.5rem;
+$ngomah-sizes-7: 1.75rem;
+$ngomah-sizes-8: 2rem;
+$ngomah-sizes-9: 1.25rem;
+$ngomah-sizes-10: 2.5rem;
+$ngomah-sizes-11: 2.75rem;
+$ngomah-sizes-12: 3rem;
+$ngomah-sizes-16: 4rem;
+
+// mixins
+@mixin flex-center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-items-vertical-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: $ngomah-font, sans-serif;
 }
 
 .container {
   max-width: 1120px;
   margin: auto;
+}
+
+/* nav */
+nav {
+  .nav-desktop {
+    @include flex-center-items();
+    justify-content: space-between;
+    height: 120px;
+  }
+
+  .nav-buttons-page {
+    ul {
+      @include flex-center-items();
+      column-gap: $ngomah-sizes-4;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: $ngomah-black;
+          font-weight: $ngomah-fonts-weight-1;
+        }
+      }
+    }
+  }
+
+  .nav-buttons-socmed {
+    ul {
+      @include flex-center-items();
+      column-gap: $ngomah-sizes-2;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+.hero {
+  @include flex-center-items();
+  .container-header {
+    height: 40.125rem;
+    width: 90rem;
+    position: relative;
+
+    .container-slogan {
+      @include flex-center-items();
+      height: 78%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+
+      .box-slogan {
+        @include flex-center-items-vertical-col();
+
+        h1 {
+          font-weight: $ngomah-fonts-weight-3;
+          color: $ngomah-neutral;
+          font-size: $ngomah-sizes-12;
+        }
+
+        button {
+          border-radius: $ngomah-sizes-2;
+          border-style: none;
+          padding: $ngomah-sizes-3 $ngomah-sizes-4;
+          font-size: $ngomah-sizes-5;
+          margin-top: $ngomah-sizes-4;
+          background-color: $ngomah-primary;
+          color: $ngomah-secondary;
+          font-weight: $ngomah-fonts-weight-2;
+        }
+      }
+    }
+
+    .hero-img-filter {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(3, 49, 46, 0.6);
+      position: absolute;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.bg-explore {
+  background-color: $ngomah-bg-grey;
+}
+
+.explore {
+  .about {
+    margin-top: -142px;
+    position: relative;
+    background-color: $ngomah-neutral;
+    display: flex;
+    padding: $ngomah-sizes-16;
+    gap: $ngomah-sizes-16;
+    border-radius: $ngomah-sizes-8;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+
+    .about-img,
+    .about-ngomah {
+      flex: 1;
+    }
+
+    .about-img {
+      height: 25rem;
+      width: 28rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 22px;
+      }
+    }
+
+    .about-ngomah {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      row-gap: $ngomah-sizes-4;
+
+      img {
+        max-height: 56px;
+      }
+
+      p {
+        font-weight: $ngomah-fonts-weight-1;
+        line-height: 130%;
+        color: $ngomah-black;
+      }
+
+      span {
+        color: $ngomah-primary;
+        font-weight: $ngomah-fonts-weight-3;
+        font-size: $ngomah-sizes-6;
+      }
+    }
+  }
 }

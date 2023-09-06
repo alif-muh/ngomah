@@ -3,41 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- header -->
     <header>
+      <!-- nav -->
       <nav>
-        <div class="logo-ngomah">
-          <img src="assets/logo-ngomah.svg" alt="logo of ngomah" />
-        </div>
-        <div class="nav-desktop">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">Impact</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="logo-socmed">
-          <ul>
-            <li>
-              <a href="#"><img src="assets/icons/logo-tiktok.svg" alt="tiktok of ngomah" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="assets/icons/logo-ig.svg" alt="instagram of ngomah" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="assets/icons/logo-yt.svg" alt="youtube of ngomah" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="assets/icons/logo-linkedin.svg" alt="linkedin of ngomah" /></a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="nav-desktop">
+            <div class="nav-logo-ngomah">
+              <img src="assets/icons/logo-ngomah.svg" alt="logo of ngomah" />
+            </div>
+            <div class="nav-buttons-page">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Impact</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="nav-buttons-socmed">
+              <ul>
+                <li>
+                  <a href="#"><img src="assets/icons/logo-tiktok.svg" alt="tiktok of ngomah" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/icons/logo-ig.svg" alt="instagram of ngomah" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/icons/logo-yt.svg" alt="youtube of ngomah" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/icons/logo-linkedin.svg" alt="linkedin of ngomah" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
 
-      <div class="hero"></div>
+      <!-- hero -->
+      <div class="hero">
+        <div class="container-header">
+          <div class="container-slogan">
+            <div class="box-slogan">
+              <h1>Live in Homestay,</h1>
+              <h1>Living Experiences.</h1>
+              <button class="stay-now">Stay now!</button>
+            </div>
+          </div>
+          <div class="hero-img-filter"></div>
+          <img src="assets/imgs/bg-header.jpg" alt="a green field landscape header image" />
+        </div>
+      </div>
     </header>
+
+    <!-- main -->
+    <main id="content">
+      <div class="bg-explore">
+        <div class="container">
+          <section class="explore">
+            <div class="about">
+              <div class="about-img">
+                <img src="assets/imgs/img-ngomah-team.jpg" alt="ngomah's team members with partners" />
+              </div>
+              <div class="about-ngomah">
+                <img class="about-ngomah-logo" src="assets/icons/logo-ngomah.svg" alt="logo of ngomah" />
+                <p class="about-ngomah-desc"><span>Ngomah</span> is a homestay booking platform in <b>commnuity-based tourism (CBT)</b>. Ngomah will help you find accommodation in residents' homes. With the principles of <b>sustainable tourism</b>, Ngomah will make your tour more intimate with the community while still protecting the environment and supporting the local economy.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
