@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Document</title>
+    <title>Ngomah</title>
+    <link rel="icon" href="assets/icons/fav-ngomah.svg" />
   </head>
   <body>
     <!-- header -->
@@ -12,40 +13,73 @@
       <!-- nav -->
       <nav>
         <div class="container">
-          <div class="nav-desktop">
+          <div class="nav-bar">
             <div class="nav-logo-ngomah">
-              <img src="assets/icons/logo-ngomah.svg" alt="logo of ngomah" />
+              <a href="#">
+                <img src="assets/icons/logo-ngomah.svg" alt="logo of ngomah" />
+              </a>
             </div>
             <div class="nav-buttons-page">
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Explore</a></li>
-                <li><a href="">Impact</a></li>
-                <li><a href="">Contact Us</a></li>
+              <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
               </ul>
             </div>
             <div class="nav-buttons-socmed">
-              <ul>
-                <li>
+              <ul class="nav-menu">
+                <li class="nav-item">
                   <a href="#"><img src="assets/icons/logo-tiktok.svg" alt="tiktok of ngomah" /></a>
                 </li>
-                <li>
+                <li class="nav-item">
                   <a href="#"><img src="assets/icons/logo-ig.svg" alt="instagram of ngomah" /></a>
                 </li>
-                <li>
+                <li class="nav-item">
                   <a href="#"><img src="assets/icons/logo-yt.svg" alt="youtube of ngomah" /></a>
                 </li>
-                <li>
+                <li class="nav-item">
                   <a href="#"><img src="assets/icons/logo-linkedin.svg" alt="linkedin of ngomah" /></a>
                 </li>
               </ul>
             </div>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+            <!-- nav-bar-mobile -->
+            <div class="nav-bar-mobile">
+              <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
+                <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+              </ul>
+
+              <ul class="nav-menu-socmed">
+                <li class="nav-item">
+                  <a href="#"><img src="assets/icons/logo-tiktok.svg" alt="tiktok of ngomah" /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img src="assets/icons/logo-ig.svg" alt="instagram of ngomah" /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img src="assets/icons/logo-yt.svg" alt="youtube of ngomah" /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img src="assets/icons/logo-linkedin.svg" alt="linkedin of ngomah" /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- nav-bar-mobile -->
           </div>
         </div>
       </nav>
 
       <!-- hero -->
-      <div class="hero">
+      <div class="hero" id="hero">
         <div class="container-header">
           <div class="container-slogan">
             <div class="box-slogan">
@@ -62,9 +96,10 @@
 
     <!-- main -->
     <main id="content">
-      <div class="bg-explore">
-        <div class="container">
-          <section class="explore">
+      <!-- explore -->
+      <section class="explore" id="explore">
+        <div class="container-explore">
+          <div class="container">
             <div class="about">
               <div class="about-img">
                 <img src="assets/imgs/img-ngomah-team.jpg" alt="ngomah's team members with partners" />
@@ -74,9 +109,150 @@
                 <p class="about-ngomah-desc"><span>Ngomah</span> is a homestay booking platform in <b>commnuity-based tourism (CBT)</b>. Ngomah will help you find accommodation in residents' homes. With the principles of <b>sustainable tourism</b>, Ngomah will make your tour more intimate with the community while still protecting the environment and supporting the local economy.</p>
               </div>
             </div>
-          </section>
+
+            <div class="partners">
+              <div class="box-partners-title">
+                <h1>Our <span>Community-Based Tourism</span> Partners</h1>
+              </div>
+              <div class="box-partners-cards">
+                <!-- partners card 1 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-tinalah.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Desa Wisata Tinalah</h3>
+                    <p>A village located around the Menoreh mountains which offers a stretch of green that are soothing to the eye.</p>
+                  </div>
+                </article>
+
+                <!-- partners card 2 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-pentingsari.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Desa Wisata Pentingsari</h3>
+                    <p>Prepare yourself because the majesty of Mount Merapi will greet you when you wake up this morning.</p>
+                  </div>
+                </article>
+
+                <!-- partners card 3 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-kakilangit.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Desa Wisata Kakilangit</h3>
+                    <p>The only village that has seven layers of sky. Explore it all when staying here.</p>
+                  </div>
+                </article>
+
+                <!-- partners card 4 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-pancoh.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Desa Wisata Pancoh</h3>
+                    <p>Feel the sensation of having breakfast while listening to the sound of the river flowing.</p>
+                  </div>
+                </article>
+
+                <!-- partners card 5 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-mudal.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Ekowisata Sungai Mudal</h3>
+                    <p>Refresh your body when you wake up by bathing in blue water that comes directly from the spring</p>
+                  </div>
+                </article>
+
+                <!-- partners card 6 -->
+                <article class="partners-card">
+                  <img class="img" src="assets/imgs/img-partners-sidoharjo.jpg" alt="tinalah tourism village landscape" />
+                  <div class="partners-card-desc">
+                    <h3>Air Terjun Sidoharjo</h3>
+                    <p>Visit this majestic waterfall when staying here.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <!-- explore -->
+
+      <!-- impact -->
+      <section class="impact" id="impact">
+        <div class="container-impact">
+          <div class="container">
+            <div class="impact-decoration"></div>
+            <div class="box-impact">
+              <div class="box-impact-quote">
+                <div class="impact-quote">
+                  <p>
+                    "Saya sangat mendukung <b>Ngomah</b> dalam membatu keberlanjutan pariwisata di destinasi berbasis masyarakat. Indonesia sangat membutuhkan banyak <b><i>start-up</i></b> yang bergerak di bidang pariwisata demi percepatan mencapai kesejahteraan masyarakat."
+                  </p>
+                  <div class="impact-quote-name">
+                    <h4>Sandiaga Salahuddin Uno</h4>
+                    <p>Menteri Pariwisata dan Ekonomi Kreatif RI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box-impact-img">
+                <img src="assets/imgs/img-impact.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- impact -->
+
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="container">
+            <aside class="contact-aside">
+              <div class="contact-secondary-color">
+                <div class="contact-center">
+                  <div class="contact-primary-color">
+                    <img src="assets/imgs/img-ceo.png" alt="ceo of ngomah" />
+                  </div>
+                  <p>Muhammad Alif</p>
+                </div>
+              </div>
+              <h4>CEO of Ngomah</h4>
+            </aside>
+            <div class="contact-form">
+              <h1>Get Closer to Us!</h1>
+              <fieldset>
+                <form id="message-from-portfolio" method="POST" action="https://script.google.com/macros/s/AKfycbzvIfB5hyRKR2uCiQN0i5CVUUhmTyylJiv_W7dPj3ooP2vT3e_FfNOkjmA4DrSYNPA0nA/exec">
+                  <label for="name"><span>Name:</span><input name="name" type="text" placeholder="Enter your name here..." autocomplete="off" required /></label>
+                  <label for="e-mail"><span>E-mail:</span><input name="e-mail" type="e-mail" placeholder="Enter your e-mail here..." autocomplete="off" required /></label>
+                  <label for="message"><span>Message:</span><textarea name="message" id="message" placeholder="Type your message here..." autocomplete="off" required></textarea></label>
+                  <div class="container-center">
+                    <button id="send-message">
+                      <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg height="1.25rem" width="1.25rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Send</span>
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+
+      <!-- footer -->
+      <footer>
+        <h4>alif-muh | 2023</h4>
+        <p>The images used in this webpage are my personal doccumentation, except the portrait of Menparekraf RI.</p>
+      </footer>
+      <!-- footer -->
+
+      <!-- js -->
+      <script src="js/script.js"></script>
     </main>
   </body>
 </html>
